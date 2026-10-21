@@ -177,6 +177,7 @@ Copy-Item -Recurse -Force "path\to\skills\arabic-balagha-skill\*" ".agents\skill
 </tr>
 </tbody>
 </table>
+<br clear="all">
 
 ### العلوم الثلاثة
 
@@ -206,6 +207,7 @@ Copy-Item -Recurse -Force "path\to\skills\arabic-balagha-skill\*" ".agents\skill
 </tr>
 </tbody>
 </table>
+<br clear="all">
 
 ### ثلاث درجات للبديل
 
@@ -231,6 +233,7 @@ Copy-Item -Recurse -Force "path\to\skills\arabic-balagha-skill\*" ".agents\skill
 </tr>
 </tbody>
 </table>
+<br clear="all">
 
 ### ما يفسد البلاغة
 
@@ -272,6 +275,7 @@ Copy-Item -Recurse -Force "path\to\skills\arabic-balagha-skill\*" ".agents\skill
 </tr>
 </tbody>
 </table>
+<br clear="all">
 
 ---
 
