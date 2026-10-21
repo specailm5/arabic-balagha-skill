@@ -1,23 +1,18 @@
 # مهارة البلاغة والصورة
 ### (Arabic Balagha & Imagery Skill)
 
+<p align="center">
+  <a href="https://github.com/specailm5/arabic-balagha-skill/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/specailm5/arabic-balagha-skill?style=flat-square"></a>
+  <a href="https://github.com/specailm5/arabic-balagha-skill/commits/master"><img alt="Last commit" src="https://img.shields.io/github/last-commit/specailm5/arabic-balagha-skill?style=flat-square"></a>
+  <a href="https://specailm5.github.io/arabic-balagha-skill/"><img alt="Docs" src="https://img.shields.io/badge/docs-live-brightgreen?style=flat-square"></a>
+  <img alt="Agent Skills" src="https://img.shields.io/badge/Agent%20Skills-compatible-5B21B6?style=flat-square">
+</p>
+
 **Arabic rhetoric skill for AI agents** — analyzes and crafts simile, metaphor, metonymy, and rhetorical figures; diagnoses affectation, hyperbole, contradiction, and obscurity: `العلم كالنور` ← `العلم مصباح في زاوية معتمة`, `الموت يأخذ الناس` ← `الموت ينصب شباكه`. Works with Claude Code, Codex, Antigravity and VS Code agent harnesses.
 
 🔗 **الموقع المرجعي (المعاني والبيان والبديع والنماذج): [specailm5.github.io/arabic-balagha-skill](https://specailm5.github.io/arabic-balagha-skill/)**
 
 > مهارة برمجية ولغوية لنماذج الذكاء الاصطناعي والمحررات الذكية (Codex، Claude Code، Antigravity IDE، VS Code Agent Harness) لتحليل الصورة البلاغية وصناعتها ونقدها، استناداً إلى **«جواهر البلاغة»** للسيد أحمد الهاشمي، و**«البلاغة الواضحة»** لعلي الجارم ومصطفى أمين، و**«أسرار البلاغة»** لعبد القاهر الجرجاني.
-
----
-
-## 🎬 عرض توضيحي (Demo)
-
-| قبل ❌ | بعد ✅ | التوجيه |
-| :--- | :--- | :--- |
-| «العلم كالنور» | «العلم مصباح في زاوية معتمة: لا يغيّر الغرفة، لكنه يمنعك من العثور على الباب» | تجديد الصورة المبتذلة |
-| «الموت يأخذ الناس» | «الموت ينصب شباكه في الطرق التي لا نراها» | استعارة مكنية حسية |
-| «كثير الرماد» | «كثير الرماد: لا يخبو ناره، ولا يخلو بيته من ضيف» | توضيح وسائط الكناية |
-| «سيفه يقطع الجبال» | «سيفه يقطع ما تعجز عنه الجبال» | غلو ← مبالغة ممكنة |
-| «كان كالليل في ضيائه» | «كان كالليل في سكونه، وكالنهار في ضيائه» | رفع التناقض |
 
 ---
 
@@ -40,7 +35,7 @@
 
 ## 📂 بنية المهارة ومكوناتها
 
-```
+<pre dir="rtl"><code>
 arabic-balagha-skill/
 │
 ├── skills/arabic-balagha-skill/          # المهارة (تركيب Agent Skills القياسي)
@@ -60,7 +55,7 @@ arabic-balagha-skill/
 ├── .agents/skills/arabic-balagha-skill/  # مسار Codex و Antigravity
 │
 └── .claude/skills/arabic-balagha-skill/  # مسار Claude Code
-```
+</code></pre>
 
 ---
 
@@ -152,41 +147,131 @@ Copy-Item -Recurse -Force "path\to\skills\arabic-balagha-skill\*" ".agents\skill
 
 ### خمسة أسئلة قبل التحليل
 
-| السؤال | لماذا؟ |
-| :--- | :--- |
-| **ما نوع النص؟** | شعر/نثر/خطبة/مقال/إعلان |
-| **ما المطلوب؟** | تحليل/صياغة/تصحيح/مقارنة |
-| **ما مستوى القارئ؟** | عمق المصطلح |
-| **ما النبرة؟** | فخمة/رصينة/حديثة |
-| **هل هناك قيد؟** | وزن/سجع/مصطلح/حساسية |
+<table dir="rtl">
+<thead>
+<tr>
+<th align="right">السؤال</th>
+<th align="right">لماذا؟</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ما نوع النص؟</strong></td>
+<td>شعر/نثر/خطبة/مقال/إعلان</td>
+</tr>
+<tr>
+<td><strong>ما المطلوب؟</strong></td>
+<td>تحليل/صياغة/تصحيح/مقارنة</td>
+</tr>
+<tr>
+<td><strong>ما مستوى القارئ؟</strong></td>
+<td>عمق المصطلح</td>
+</tr>
+<tr>
+<td><strong>ما النبرة؟</strong></td>
+<td>فخمة/رصينة/حديثة</td>
+</tr>
+<tr>
+<td><strong>هل هناك قيد؟</strong></td>
+<td>وزن/سجع/مصطلح/حساسية</td>
+</tr>
+</tbody>
+</table>
 
 ### العلوم الثلاثة
 
-| العلم | موضوعه | أمثلة |
-| :--- | :--- | :--- |
-| **المعاني** | مطابقة الكلام للمقام | الخبر/الإنشاء، التقديم، الحذف، القصر |
-| **البيان** | إبراز المعنى بصور | التشبيه، الاستعارة، الكناية، المجاز |
-| **البديع** | تحسين الكلام بعد مطابقته | الطباق، المقابلة، الجناس، السجع |
+<table dir="rtl">
+<thead>
+<tr>
+<th align="right">العلم</th>
+<th align="right">موضوعه</th>
+<th align="right">أمثلة</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>المعاني</strong></td>
+<td>مطابقة الكلام للمقام</td>
+<td>الخبر/الإنشاء، التقديم، الحذف، القصر</td>
+</tr>
+<tr>
+<td><strong>البيان</strong></td>
+<td>إبراز المعنى بصور</td>
+<td>التشبيه، الاستعارة، الكناية، المجاز</td>
+</tr>
+<tr>
+<td><strong>البديع</strong></td>
+<td>تحسين الكلام بعد مطابقته</td>
+<td>الطباق، المقابلة، الجناس، السجع</td>
+</tr>
+</tbody>
+</table>
 
 ### ثلاث درجات للبديل
 
-| الدرجة | مثال |
-| :--- | :--- |
-| **آمنة** | «الوقت يمضي كالماء» |
-| **متوسطة** | «الوقت نهر لا يعود إلى منابعه» |
-| **جريئة** | «الوقت حبل يُسحب من بين أصابعنا» |
+<table dir="rtl">
+<thead>
+<tr>
+<th align="right">الدرجة</th>
+<th align="right">مثال</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>آمنة</strong></td>
+<td>«الوقت يمضي كالماء»</td>
+</tr>
+<tr>
+<td><strong>متوسطة</strong></td>
+<td>«الوقت نهر لا يعود إلى منابعه»</td>
+</tr>
+<tr>
+<td><strong>جريئة</strong></td>
+<td>«الوقت حبل يُسحب من بين أصابعنا»</td>
+</tr>
+</tbody>
+</table>
 
 ### ما يفسد البلاغة
 
-| العيب | العلاج |
-| :--- | :--- |
-| تكلف | احذف المحسن |
-| غلو | اجعل المبالغة ممكنة |
-| تناقض | وحّد وجه الشبه |
-| فساد تأويل | اترك الظاهر |
-| استعارة مقلوبة | أعد الأصل |
-| تعقيد | أعد الترتيب |
-| ابتذال | جدّد المرساة |
+<table dir="rtl">
+<thead>
+<tr>
+<th align="right">العيب</th>
+<th align="right">العلاج</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>تكلف</td>
+<td>احذف المحسن</td>
+</tr>
+<tr>
+<td>غلو</td>
+<td>اجعل المبالغة ممكنة</td>
+</tr>
+<tr>
+<td>تناقض</td>
+<td>وحّد وجه الشبه</td>
+</tr>
+<tr>
+<td>فساد تأويل</td>
+<td>اترك الظاهر</td>
+</tr>
+<tr>
+<td>استعارة مقلوبة</td>
+<td>أعد الأصل</td>
+</tr>
+<tr>
+<td>تعقيد</td>
+<td>أعد الترتيب</td>
+</tr>
+<tr>
+<td>ابتذال</td>
+<td>جدّد المرساة</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
@@ -213,6 +298,24 @@ Copy-Item -Recurse -Force "path\to\skills\arabic-balagha-skill\*" ".agents\skill
 
 ---
 
+## 🤝 المساهمة
+
+نرحب بالمساهمات التي تحسّن المادة أو التحرير أو التوثيق. اقرأ [CONTRIBUTING.md](CONTRIBUTING.md) قبل فتح طلب سحب، والتزم بـ[قواعد السلوك](CODE_OF_CONDUCT.md).
+
+## 🛡️ الأمان
+
+إن وجدت مشكلة أمنية، فلا تفتح قضية عامة؛ راجع [SECURITY.md](SECURITY.md).
+
+## 📄 سجل التغييرات
+
+راجع [CHANGELOG.md](CHANGELOG.md) لمعرفة ما أُضيف في كل إصدار.
+
+## 📬 الدعم
+
+للأسئلة والاقتراحات: [افتح قضية](https://github.com/specailm5/arabic-balagha-skill/issues).
+
+---
+
 ## 📜 الترخيص (License)
 
-هذه المهارة مفتوحة المصدر ومتاحة للاستخدام الشخصي والتجاري والبحثي لدعم البلاغة العربية.
+هذه المهارة مفتوحة المصدر تحت رخصة [MIT](LICENSE)، ومتاحة للاستخدام الشخصي والتجاري والبحثي لدعم البلاغة العربية.
