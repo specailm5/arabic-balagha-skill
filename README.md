@@ -147,7 +147,7 @@ Copy-Item -Recurse -Force "path\to\skills\arabic-balagha-skill\*" ".agents\skill
 
 ### خمسة أسئلة قبل التحليل
 
-<table dir="rtl">
+<table dir="rtl" align="right">
 <thead>
 <tr>
 <th align="right">السؤال</th>
@@ -180,7 +180,7 @@ Copy-Item -Recurse -Force "path\to\skills\arabic-balagha-skill\*" ".agents\skill
 
 ### العلوم الثلاثة
 
-<table dir="rtl">
+<table dir="rtl" align="right">
 <thead>
 <tr>
 <th align="right">العلم</th>
@@ -209,7 +209,7 @@ Copy-Item -Recurse -Force "path\to\skills\arabic-balagha-skill\*" ".agents\skill
 
 ### ثلاث درجات للبديل
 
-<table dir="rtl">
+<table dir="rtl" align="right">
 <thead>
 <tr>
 <th align="right">الدرجة</th>
@@ -234,7 +234,7 @@ Copy-Item -Recurse -Force "path\to\skills\arabic-balagha-skill\*" ".agents\skill
 
 ### ما يفسد البلاغة
 
-<table dir="rtl">
+<table dir="rtl" align="right">
 <thead>
 <tr>
 <th align="right">العيب</th>
